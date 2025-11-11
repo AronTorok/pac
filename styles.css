@@ -4,6 +4,7 @@
 
 a {
   cursor: url("ghost.svg"), auto;
+  color: yellow;
 }
 
 body {
