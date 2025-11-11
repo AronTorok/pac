@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PAC-MAN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Sixtyfour&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="pacman.png" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <audio id="click-sound" src="waka.mp3" preload="auto"></audio>
+    <div class="container sticky-top bg-black">
+      <header
+        class="d-flex flex-wrap justify-content-center align-items-center py-3"
+      >
+        <a
+          href="#"
+          class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="pacman.png"
+            alt="Pacman"
+            width="60"
+            height="60"
+            class="me-3"
+          />
+          <h1 class="mb-0">PAC-MAN</h1>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item me-1">
+            <a href="#pacman" class="nav-link active yellow text-black"
+              >PAC-MAN</a
+            >
+          </li>
+          <li class="nav-item me-1">
+            <a href="#blinky" class="nav-link active red">BLINKY</a>
+          </li>
+          <li class="nav-item me-1">
+            <a href="#inky" class="nav-link active cyan text-black">INKY</a>
+          </li>
+          <li class="nav-item me-1">
+            <a href="#clyde" class="nav-link active orange">CLYDE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pinky" class="nav-link active pink text-black">PINKY</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <main class="container">
+      <div class="row g-4 d-flex align-items-stretch">
+        <div class="col-xl-4 col-md-6" id="pacman">
+          <div class="border border-primary rounded-4 border-3 px-2 blue h-100 pb-3">
+            <div class="border border-primary rounded-3 border-3 my-2 blue h-100">
+              <div class="card bg-black text-white flex-fill h-100">
+                <img src="pacman_cartoon.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title">PAC-MAN</h4>
+                  <p class="card-text">
+                    PAC-MAN’s yellow color and round shape are what make him so
+                    iconic! Always cheerful and happy, he loves to chomp
+                    anything and everything!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6" id="blinky">
+          <div class="border border-primary rounded-4 border-3 px-2 blue h-100 pb-3">
+            <div class="border border-primary rounded-3 border-3 my-2 blue h-100">
+              <div class="card bg-black text-white h-100">
+                <img src="blinky.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title">BLINKY</h4>
+                  <p class="card-text">
+                    BLINKY is the leader of the Ghosts! He is very quick and
+                    persistent.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6" id="inky">
+          <div class="border border-primary rounded-4 border-3 px-2 blue h-100 pb-3">
+            <div class="border border-primary rounded-3 border-3 my-2 blue h-100">
+              <div class="card bg-black text-white h-100">
+                <img src="inky.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title">INKY</h4>
+                  <p class="card-text">
+                    INKY is capricious, sometimes chasing and sometimes running
+                    away from PAC-MAN. He’s a bit shy!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6" id="clyde">
+          <div class="border border-primary rounded-4 border-3 px-2 blue h-100 pb-3">
+            <div class="border border-primary rounded-3 border-3 my-2 blue h-100">
+              <div class="card bg-black text-white h-100">
+                <img src="clyde.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title">CLYDE</h4>
+                  <p class="card-text">
+                    CLYDE is a free-spirited wanderer who likes to explore every
+                    corner of the maze.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6" id="pinky">
+          <div class="border border-primary rounded-4 border-3 px-2 blue h-100 pb-3">
+            <div class="border border-primary rounded-3 border-3 my-2 blue h-100">
+              <div class="card bg-black text-white h-100">
+                <img src="pinky.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h4 class="card-title">PINKY</h4>
+                  <p class="card-text">
+                    PINKY is the strategist of the group, anticipating and
+                    ambushing PAC-MAN at every chance!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container footer mt-auto pb-1 pt-3">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <a
+            href="#"
+            class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <img
+              src="pacman.png"
+              alt="Pacman"
+              width="60"
+              height="60"
+              class="me-3"
+            />
+            <h1 class="mb-0">PAC-MAN</h1>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const clickSound = document.getElementById("click-sound");
+      document.addEventListener("click", () => {
+        const soundClone = clickSound.cloneNode();
+        soundClone.play().catch(() => {});
+      });
+    </script>
+  </body>
+</html>

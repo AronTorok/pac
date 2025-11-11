@@ -1,0 +1,55 @@
+* {
+  cursor: url("pacman.svg"), auto;
+}
+
+a {
+  cursor: url("ghost.svg"), auto;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
+}
+
+.yellow {
+  background-color: yellow !important;
+}
+
+.red {
+  background-color: red !important;
+}
+
+.cyan {
+  background-color: cyan !important;
+}
+
+.pink {
+  background-color: pink !important;
+}
+
+.orange {
+  background-color: orange !important;
+}
+
+.blue {
+  border-color: blue !important;
+}
